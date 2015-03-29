@@ -1,8 +1,9 @@
 class Conta {
-	int numero;
-	String dono;
-	double saldo;
-	double limite;
+	int numero = 1234;
+	String dono = "Duke";
+	String cpf = "123.456.789-10"
+	double saldo = 1000;
+	double limite = 1000;
 	double salario;
 	
 	void deposita(double quantidade){
@@ -21,6 +22,10 @@ class Conta {
 		}
 	}
 	
+	void tranfere (Conta destino, double valor){
+		this.saldo = this.saldo = valor;
+		destino.saldo = destino.saldo + valor
+	}
 }
 
 class TestaMetodos{
